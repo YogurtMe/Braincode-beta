@@ -600,13 +600,13 @@ a.neon {
   }
   
   .benefit {
-    display: flex;
+   display: flex;
+    justify-content: space-around;
     align-items: center;
   }
   
   .benefit:nth-child(2) {
     display: flex;
-    justify-content: space-around;
     flex-direction: row-reverse;
   }
   
