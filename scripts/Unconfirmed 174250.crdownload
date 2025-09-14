@@ -1,0 +1,93 @@
+let dataMateri =
+[
+  {
+    "id": "cpp-mat-1",
+    "header": {
+      "title": "Pengenalan Pemrograman bahasa C++",
+      "subTitle": "Asal mula pemrograman bahasa C++  「History」"
+    },
+    "content": [
+      {
+        "type": "t",
+        "content": "Pemrograman Bahasa C++"
+      },
+      {
+        "type": "p",
+        "content": "Bahasa C dikembangken di Bell lab pada tahun 1972 ditulis pertama kali oleh Brian Wilson Kernighan dan Denies M. Ricthie merupakan bahasa turunan atau pengembangan dari bahasa B yang ditulis oleh Ken Thompson pada tahun 1970, yang juga merupakan bahasa yang diturunkan oleh bahasa sebelumnya, yaitu BCL.\n\nBahasa C pada awalnya dirancang sebagai bahasa pemrograman yang dioperasikan pada sistem operasi UNIX. Bahasa C merupakan bahasa pemrograman yang tergolong di antara bahasa tinggat rendah dan tingkat tinggi yang biasa disebut dengan Bahasa Tingkat Menengah. Bahasa C mempunyai banyak kemampuan yang sering digunakan diantaranya kemampuan untuk membuat perangkat lunak, misalnya dBASE, Word Star dan lain-lain.\n\nBahasa C++ lahir pada tahun 1980, yang dibuat oleh Bjarne Stroustrup di AT&T Bell Laboratories awal tahun 1980-an berdasarkan C ANSI (American National Standard Institute). Pertama kali, prototype C++ muncul sebagai C yang dipercanggih dengan fasilitas kelas, bahasa tersebut disebut “C dengan kelas” (C with Class)."
+      },
+      {
+        "type": "t",
+        "content": "Perkembangan Bahasa Pemograman C++"
+      },
+      {
+        "type": "p",
+        "content": "Pada tahun 1983-1984, C dengan kelas disempurnakan dengan menambahkan fasilitas overloading operator, yang mulanya disebut “a better C” kemudian berganti nama pada tahun 1983 menjadi C++. Simbol ++ merupakan operator penaikan pada C, digunakan untuk menunjukkan bahwa bahasa baru ini merupakan versi yang lebih canggih dari C.\n\nBorland International merilis kompiler Borland C++ dan Turbo C++. Kedua kompiler ini sama-sama dapat digunakan untuk mengkompilasi kode C++. Bedanya, Borland C++ selain dapat digunakan dibawah lingkungan DOS, juga dapat digunakan untuk pemrograman Windows. Selain Borland International beberapa perusahaan lain juga merilis kompiler C++, seperti Topspeed C++ dan Zortech C++."
+      }
+    ]
+  },
+  {
+    "id": "cpp-mat-2",
+    "header": {
+      "title": "Tokoh-Tokoh Penemu Bahasa C++",
+      "subTitle": "Sejarah singkat tentang Tokoh-Tokoh para penemu Bahasa pemrograman C++"
+    },
+    "content": [
+      {
+        "type": "t",
+        "content": "Siapa sih Tokoh penemu Bahasa Pemrograman C?"
+      },
+      {
+        "type": "p",
+        "content": "Pada awal nya Bahasa Pemrograman C++ dulu nya hanya Bahasa Pemrograman C saja,tidak ada (++) nya dikarenakan tanda tersebut menandakan bahwa bahasa ini telah berevolusi dan berkembang "
+      },
+      {
+        "type": "p",
+        "content": "Nah sekarang kita akan membahas tentang Tokoh pertama penemu Bahasa Pemrograman C, lets'go!"
+      },
+      {
+        "type": "t",
+        "content": "Brian Wilson Kernighan"
+      },
+      {
+        "type": "p",
+        "content": "Salah satu Tokoh Penemu Bahasa Pemrograman C adalah Brian Wilson Kernighan.Ia lahir pada tanggal 1 Januari 1942 dan sekarang berumur 83 Tahun."
+      },
+      {
+        "type": "p",
+        "content": "Brian Wilson Kernighan merupakan seorang Ilmuwan Komputer,pada saat ini ia menjabat sebagai Profesor Ilmu Komputer di Universitas Princeton."
+      },
+      {
+        "type": "p",
+        "content": "Ia terkenal karena berkontribusi dalam pengembangan sistem operasi Unix, menulis bersama buku pertama tentang bahasa pemrograman C dengan Dennis Ritchie, serta menjadi rekan penulis bahasa pemrograman AWK dan AMPL"
+      },
+      {
+        "type": "t",
+        "content": "Denies MacAlistair Ritchie"
+      },
+      {
+        "type": "p",
+        "content": "Denies MacAlistair juga merupakan seorang ilmuwan komputer,Ia lahir pada tanggal 9 September 1941 dan meninggal pada tanggal 12 Oktober 2011."
+      },
+      {
+        "type": "p",
+        "content": "Denies MacAlistair berpendidikan di Universitas Harvard.Pada tahun 1983, Thompson dan Ritchie menerima Penghargaan Turing ACM AM. Komite seleksi Penghargaan Turing menulis: Kesuksesan sistem UNIX berawal dari pemilihan beberapa ide kunci yang cermat dan implementasinya yang elegan."
+      },
+      {
+        "type": "t",
+        "content": "Bjarne Stroustrup"
+      },
+      {
+        "type": "p",
+        "content": "Bjarne Stroustrup lah yang merupakan penemu Bahasa Pemrograman C++,ia ikut berpartisipasi dalam perancangan perkembangan bahasa yang dibuat oleh kedua teman nya Brian Wilson Kernighan dan Denies MacAlistair Ritchie"
+      },
+      {
+        "type": "p",
+        "content": "Bjarne Stroustrup lahir pada tanggal 30 Desember 1950,Asal negara Denmark,dan sekarang berusia 74 tahun,ia juga seorang ilmuwan komputer yang ahli,ia pernah menempuh pendidikan di Campbridge University (1979) dan Aarhus University (1969-1975)"
+      },
+      {
+        "type": "p",
+        "content": "Bjarne Stroustrup adalah seorang ilmuwan komputer dan profesor di bidang ilmu komputer di Universitas Texas A&M. Dia dikenal lewat jasanya dalam mengembangkan bahasa pemrograman C++. Stroustrup meraih pendidikan master di bidang matematika dan ilmu komputer pada tahun 1975 dari Universitas Aarhus, Denmark"
+      }
+    ]
+  }
+]
