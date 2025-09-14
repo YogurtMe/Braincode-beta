@@ -606,6 +606,7 @@ a.neon {
   
   .benefit:nth-child(2) {
     display: flex;
+    justify-content: space-around;
     flex-direction: row-reverse;
   }
   
