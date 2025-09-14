@@ -3,11 +3,11 @@
 let menu = document.getElementById('menu');
 let nav = document.getElementById('nav');
 let menuMore = document.getElementById('menu-more');
+let body = document.getElement
 
 let temp = 0;
 let toggleMenu = ()=>{
     menuMore.classList.toggle('active');
-    menu.classList.toggle('toX');
     
     if(temp == 0){
         document.body.style.overflow = 'hidden';
@@ -22,9 +22,6 @@ let toggleMenu = ()=>{
 
 menu.addEventListener('click', ()=>{toggleMenu();});
 menuMore.addEventListener('click', ()=>{toggleMenu();});
-
-
-
 
 
 
@@ -73,8 +70,8 @@ let addCh = (id, judul, desk, chId)=>{
     <div class="item fadeInline">
       <div class="materi-parent" id="${chId}">
         <div class="ch-header">
-          <h1 class="txt-wth">${judul}</h1>
-          <p class="txt-wth">${desk}</p>
+          <h1 class="txt-bgb">${judul}</h1>
+          <p class="txt-bgb">${desk}</p>
         </div>
       </div>
     </div>
@@ -86,74 +83,79 @@ let addMateri = (chId, judul, desk, matLink)=>{
     parent.insertAdjacentHTML("beforeend",
     `
     <div class="materi">
+      <div class="icon"></div>
+      <div class="explan">
         <h1 class="txt-wth">${judul}</h1>
         <p class="txt-wth">${desk}</p>
         <a class="txt-wth" onclick="selectMat('${matLink}')" href="materi.html">Pelajari</a>
+      </div>
     </div>
     `);
 }
-
+/*tempat menambahkan materi*/
 let addChMat = ()=>{
-    addCh("js-chP","chapter 1","pelajari sejarah, penemu dan berbagai hal tentang javascript","js-ch1");
-    addMateri("js-ch1","apa itu javascript","kenalan dengan javascript","js-mat-1");
-    addMateri("js-ch1","sejarah javascript","pelajari sejarah javascript","js-mat-2");
-    addMateri("js-ch1","kegunaan","pelajari berbagai kegunaan javascript");
+    addCh("js-chP","chapter 1","acumalaka acumalaka","js-ch1");/*acumalaka deskripsi singkat, js-ch1 untuk id baru untuk chapter, */
+    addMateri("js-ch1","output","console.log pada javascript","js-mat-1");
+    addMateri("js-ch1","looping","macam macam loop pada javascript","js-mat-2");
+    addMateri("js-ch1","pengenalan","kenali javascript lebih dalam");
     addMateri("js-ch1","pengenalan","kenali javascript lebih dalam");
     
-    addCh("js-chP","chapter 2","pelajari bagaimana cara instalasi javascript","js-ch2");
-    addMateri("js-ch2","tools yang dibutuhkan","pelajari apa saja yang dibutuhkan untuk menggunakan javascript","js-mat-1");
-    addMateri("js-ch2","setup file","bagaimana struktur file untuk menggunakan javascript","js-mat-1");
-    addMateri("js-ch2","menggunakan javascript","pelajari cara menggunakan javascript","js-mat-1");
-    addMateri("js-ch2","javascript di luar web","bagaimana javascript berjalan di luar website","js-mat-1");
-    
-    addCh("js-chP","chapter 3","kenali berbagai variabel dan tipe data di javascript.","js-ch3");
-    addMateri("js-ch3","variabel","variabel dalam javascript.","js-mat-1");
-    addMateri("js-ch3","var","variabel var dalam javascript.","js-mat-1");
-    addMateri("js-ch3","let","variabel let dalam javascript.","js-mat-1");
-    addMateri("js-ch3","const","variabel const dalam javascript.","js-mat-1");
-    addMateri("js-ch3","tipe data","tipe data dalam javascript.","js-mat-1");
-    addMateri("js-ch3","string","tipe data string dalam javascript.","js-mat-1");
-    addMateri("js-ch3","integer","tipe data integer dalam javascript.","js-mat-1");
-    addMateri("js-ch3","boolean","tipe data boolean dalam javascript.","js-mat-1");
-    
-    addCh("js-chP","chapter 4","pelajari operator dalam javascript.","js-ch4");
-    addMateri("js-ch4","operator","operator dalam javascript.","js-mat-1");
-    addMateri("js-ch4","penjumlahan","penjumlahan dalam javascript.","js-mat-1");
-    addMateri("js-ch4","pengurangan","pengurangan dalam javascript.","js-mat-1");
-    addMateri("js-ch4","perkalian","perkalian dalam javascript.","js-mat-1");
-    addMateri("js-ch4","pembagian","pembagian dalam javascript.","js-mat-1");
-    
-    addCh("js-chP","chapter 5","pelajari control flow dalam javascript.","js-ch5");
-    addMateri("js-ch5","control flow","control flow dalam javascript.","js-mat-1");
-    addMateri("js-ch5","if","if dalam javascript.","js-mat-1");
-    addMateri("js-ch5","else if","else if dalam javascript.","js-mat-1");
-    addMateri("js-ch5","switch","switch dalam javascript.","js-mat-1");
-
-    addCh("js-chP","chapter 6","pelajari perulangan dalam javascript.","js-ch6");
-    addMateri("js-ch6","perulangan","perulangan dalam javascript.","js-mat-1");
-    addMateri("js-ch6","for loop","for loop dalam javascript.","js-mat-1");
-    addMateri("js-ch6","while","while dalam javascript.","js-mat-1");
-    addMateri("js-ch6","do while","do while dalam javascript.","js-mat-1");
-    
-    addCh("js-chP","chapter 7","pelajari array dan object dalam javascript.","js-ch7");
-    addMateri("js-ch7","array","array dalam javascript.","js-mat-1");
-    addMateri("js-ch7","object","object dalam javascript.","js-mat-1");
-    
-    
-    
-    
+    addCh("js-chP","chapter 2","cuakk","js-ch2");
+    addMateri("js-ch2","output","console.log pada javascript","js-mat-2");
+    addMateri("js-ch2","output","console.log pada javascript","js-mat-3");
     
     addCh("cpp-chP","chapter 1","acumalaka acumalaka","cpp-ch1");
+    
+    
+    
     addMateri("cpp-ch1","pengenalan","kenali c++ lebih dalam");
     addMateri("cpp-ch1","pengenalan","kenali c++ lebih dalam");
     addMateri("cpp-ch1","pengenalan","kenali c++ lebih dalam");
     addMateri("cpp-ch1","pengenalan","kenali c++ lebih dalam");
 
-    addCh("py-chP","chapter 1","acumalaka acumalaka","py-ch1");
-    addMateri("py-ch1","pengenalan","kenali python lebih dalam");
-    addMateri("py-ch1","pengenalan","kenali python lebih dalam");
-    addMateri("py-ch1","pengenalan","kenali python lebih dalam");
-    addMateri("py-ch1","pengenalan","kenali python lebih dalam");
+    addCh("py-chP","chapter 1","Pengenalan","py-ch1");
+    addMateri("py-ch1","Definisi","Apa itu Python? yuk kita cari tahu.", "py-mat-1");
+    addMateri("py-ch1","Sejarah","Bagaimana sih sejarah python?", "py-mat-2");
+    addMateri("py-ch1","Pengenalan"," cara instalasi python diandroid", "py-mat-3");
+    addMateri("py-ch1","pengenalan","kenali python lebih dalam", "py-mat-4");
+    addMateri("py-ch1","pengenalan","kenali python lebih dalam", "py-mat-5");
+    
+    addCh("py-chP","chapter 2","Fundamental Python: Aturan dan Penulisan Kode","py-ch2");
+    addMateri("py-ch2","Menulis kode program","ayo pelajari cara penulisan programnya", "py-mat-6");
+    addMateri("py-ch2","Case Sensitive","kenali python lebih dalam", "py-mat-7");
+    addMateri("py-ch2","Identation","kenali python lebih dalam", "py-mat-8");
+    addMateri("py-ch2","Definisi Variabel","Apa itu Variabel pada Python? yuk kita pelajari", "py-mat-9");
+    addMateri("py-ch2","Pengenalan Variabel","kenali python lebih dalam", "py-mat-10");
+    addMateri("py-ch2","Syarat penulisan","Ada aturan penulisan code python", "py-mat-11");
+    addMateri("py-ch2","Sifat-sifat","Yuk kita cari tahu tentang sifat-sifatnya", "py-mat-12");
+    addMateri("py-ch2","Assignment Operator","kenali python lebih dalam", "py-mat-13");
+    addMateri("py-ch2","Fungsi Print","kenali python lebih dalam", "py-mat-14");
+    addMateri("py-ch2","Pengerjaan Dengan Penggunaan String","kenali python lebih dalam", "py-mat-15");
+    addMateri("py-ch2","Cara penggunaan Format","kenali python lebih dalam", "py-mat-16");
+    addMateri("py-ch2","Penggunaan Dengan Tipe Data Numerik","kenali python lebih dalam", "py-mat-17");
+    
+    addCh("py-chP","chapter 3","Operator Python","py-ch3");
+    addMateri("py-ch3","pengenalan","kenali python lebih dalam", "py-mat-18");
+     addMateri("py-ch3","pengenalan","kenali python lebih dalam");
+     addMateri("py-ch3","pengenalan","kenali python lebih dalam");
+     addMateri("py-ch3","pengenalan","kenali python lebih dalam");
+     addMateri("py-ch3","pengenalan","kenali python lebih dalam");
+    
+    
+    addCh("py-chP","chapter 4","Python ah ah","py-ch4");
+    addMateri("py-ch4","pengenalan","kenali python lebih dalam");
+     addMateri("py-ch4","pengenalan","kenali python lebih dalam");
+     addMateri("py-ch4","pengenalan","kenali python lebih dalam");
+     addMateri("py-ch4","pengenalan","kenali python lebih dalam");
+     addMateri("py-ch4","pengenalan","kenali python lebih dalam");
+    
+    
+    addCh("py-chP","chapter 5","Python ah ah","py-ch5");
+    addMateri("py-ch5","pengenalan","kenali python lebih dalam");
+     addMateri("py-ch5","pengenalan","kenali python lebih dalam");
+     addMateri("py-ch5","pengenalan","kenali python lebih dalam");
+     addMateri("py-ch5","pengenalan","kenali python lebih dalam");
+     addMateri("py-ch5","pengenalan","kenali python lebih dalam");
 }
 
 
@@ -188,6 +190,8 @@ let chOnload = ()=>{
     doSelectCh();
     addChMat();
 }
+
+
 
 
 
